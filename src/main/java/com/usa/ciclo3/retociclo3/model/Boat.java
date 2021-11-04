@@ -27,7 +27,7 @@ public class Boat implements Serializable{
     private String description;
     
     @ManyToOne
-    @JoinColumn(name="idCategory")
+    @JoinColumn(name="categoryid")
     @JsonIgnoreProperties("boats")
     private Category category;
     
@@ -102,15 +102,4 @@ public class Boat implements Serializable{
     public void setReservations(List<Reservation> reservations) {
         this.reservations = reservations;
     }
-            
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
