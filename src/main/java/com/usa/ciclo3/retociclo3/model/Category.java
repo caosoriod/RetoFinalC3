@@ -16,7 +16,7 @@ import javax.persistence.Table;
 public class Category implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer Id;
+    private Integer id;
     private String name;
     private String description;
     
@@ -25,11 +25,11 @@ public class Category implements Serializable {
     private List<Boat> boats;
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Integer Id) {
-        this.Id = Id;
+        this.id = id;
     }
 
     public String getName() {
